@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Elena Torres",
+    "edad": 28,
+    "ciudad": "Madrid"
+  },
+  {
+    "nombre": "Carlos Ruiz",
+    "edad": 35,
+    "ciudad": "Barcelona"
+  },
+  {
+    "nombre": "Sofia Mendoza",
+    "edad": 42,
+    "ciudad": "Valencia"
+  }
+]
