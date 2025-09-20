@@ -1,17 +1,17 @@
 [
   {
-    "nombre": "Elena Torres",
-    "edad": 28,
-    "ciudad": "Madrid"
+    "nombre": "Eduardo",
+    "edad": 22,
+    "ciudad": "Monterrey"
   },
   {
-    "nombre": "Carlos Ruiz",
-    "edad": 35,
-    "ciudad": "Barcelona"
+    "nombre": "Leon",
+    "edad": 29,
+    "ciudad": "Toluca"
   },
   {
-    "nombre": "Sofia Mendoza",
-    "edad": 42,
-    "ciudad": "Valencia"
+    "nombre": "Sofia",
+    "edad": 25,
+    "ciudad": "Oaxaca"
   }
 ]
