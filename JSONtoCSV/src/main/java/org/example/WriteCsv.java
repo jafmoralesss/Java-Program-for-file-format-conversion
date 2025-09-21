@@ -12,7 +12,6 @@ import java.util.Map;
 public class WriteCsv {
 
     public void writeCsvFile(List<Map<String, Object>> dataHold, String filepathHold){
-        dataHold = null;
         try {
             CsvMapper csvMapper = new CsvMapper();
             CsvSchema.Builder schemaBuilder = CsvSchema.builder();
