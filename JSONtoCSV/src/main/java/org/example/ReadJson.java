@@ -8,6 +8,12 @@ import java.util.Map;
 
 public class ReadJson {
 
+    /**
+     * Reads a JSON file and parses its content into a list of maps.
+     *
+     * @param filePath The path for the JSON file to be read.
+     * @return A list that represents the parsed JSON data.
+     */
     public List<Map<String, Object>> readJsonFile(String filePath) {
         List<Map<String, Object>> data = null;
         try{
