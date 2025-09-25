@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Eduardo",
+    "Age": 22,
+    "City": "Monterrey"
+  },
+  {
+    "Name": "Diego",
+    "Age": 28,
+    "City": "Michoacan"
+  },
+  {
+    "Name": "Johan",
+    "Age": 22,
+    "City": "Monterrey"
+  }, 
+  {
+    "Name": "Leon",
+    "Age": 29,
+    "City": "Toluca"
+  },
+  {
+    "Name" "Sofia",
+    "Age": 25,
+    "City": "Oaxaca"
+  }
+]

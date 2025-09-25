@@ -14,7 +14,7 @@ public class ReadJson {
      * @param filePath The path for the JSON file to be read.
      * @return A list that represents the parsed JSON data.
      */
-    public List<Map<String, Object>> readJsonFile(String filePath) {
+    public List<Map<String, Object>> parseJsonFile(String filePath) {
         List<Map<String, Object>> data = null;
         try{
             ObjectMapper objectMapper = new ObjectMapper();
@@ -26,6 +26,4 @@ public class ReadJson {
 
         return data;
     }
-
-
 }
