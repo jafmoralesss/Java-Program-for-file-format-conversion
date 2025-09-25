@@ -1,6 +1,5 @@
 package org.example;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -17,8 +16,11 @@ public class MainConverter {
         ReadJson startReadJson = new ReadJson();
         List<Map<String, Object>> parsedData = startReadJson.parseJsonFile(inputFilePath);
 
-        WriteCsv csvWriter = new WriteCsv();
-        csvWriter.writeCsvFile(parsedData, outputFilePath);
-
+        if (parsedData != null) {
+            WriteCsv csvWriter = new WriteCsv();
+            csvWriter.writeCsvFile(parsedData, outputFilePath);
+        } else {
+            System.out.println("Empty file or couldn't be processed.");
+        }
     }
 }
