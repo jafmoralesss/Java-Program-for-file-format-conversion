@@ -12,19 +12,19 @@ import java.util.Map;
 public class WriteCsv {
     /**
      *
-     * @param dataHold Contents data from the parsed JSON file.
-     * @param filepathWritten Shows where the CSV file will be written.
+     * @param flattenedData Contents data from the parsed JSON file.
+     * @param outputFilePath Shows where the CSV file will be written.
      */
-    public void writeCsvFile(List<Map<String, Object>> dataHold, String filepathWritten){
+    public void writeCsvFile(List<Map<String, Object>> flattenedData, String outputFilePath){
         try {
             CsvMapper csvMapper = new CsvMapper();
             CsvSchema.Builder schemaBuilder = CsvSchema.builder();
-            for (String key : dataHold.get(0).keySet()) {
+            for (String key : flattenedData.get(0).keySet()) {
                 schemaBuilder.addColumn(key);
             }
             CsvSchema csvSchema = schemaBuilder.build().withHeader();
 
-            csvMapper.writer(csvSchema).writeValue(new File(filepathWritten), dataHold);
+            csvMapper.writer(csvSchema).writeValue(new File(outputFilePath), flattenedData);
 
         } catch (IOException E) {
             E.printStackTrace();

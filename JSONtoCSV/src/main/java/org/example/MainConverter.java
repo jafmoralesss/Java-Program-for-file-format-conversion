@@ -30,9 +30,12 @@ public class MainConverter {
         ReadJson startReadJson = new ReadJson();
         List<Map<String, Object>> parsedData = startReadJson.parseJsonFile(inputFilePath);
 
-        if (parsedData!=null) {
+        JsonFlattener startJsonFlattener = new JsonFlattener();
+        List<Map<String, Object>> flattennedData = startJsonFlattener.flattenJson(parsedData);
+
+        if (flattennedData!=null) {
             WriteCsv csvWriter = new WriteCsv();
-            csvWriter.writeCsvFile(parsedData, outputFilePath);
+            csvWriter.writeCsvFile(flattennedData, outputFilePath);
             System.out.println("SUCCESFUL CONVERSION: Check your output filepath!");
         } else {
             System.out.println("ERROR: File couldn't be processed or it's empty");
