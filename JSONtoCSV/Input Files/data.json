@@ -1,22 +1,74 @@
 [
   {
     "id": 1,
-    "name": "Ana",
-    "age": 20,
-    "grades": {
-      "math": 9,
-      "history": 8,
-      "science": 10
-    }
+    "firstName": "Beatriz",
+    "lastName": "Solórzano",
+    "age": 29,
+    "department": "Scientometrics",
+    "role": "Software Developer",
+    "status": "Active"
   },
   {
     "id": 2,
-    "name": "Luis",
-    "age": 22,
-    "grades": {
-      "math": 6,
-      "history": 7,
-      "science": 7
-    }
+    "firstName": "Érika",
+    "lastName": "Martínez",
+    "age": 42,
+    "department": "Scientometrics",
+    "role": "Director",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "firstName": "Javier",
+    "lastName": "Ramírez",
+    "age": 35,
+    "department": "IT",
+    "role": "Data Analyst",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "firstName": "Lucía",
+    "lastName": "Gómez",
+    "age": 31,
+    "department": "Research",
+    "role": "Coordinator",
+    "status": "Inactive"
+  },
+  {
+    "id": 5,
+    "firstName": "Andrés",
+    "lastName": "Hernández",
+    "age": 27,
+    "department": "IT",
+    "role": "Support Engineer",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "firstName": "Paola",
+    "lastName": "Santos",
+    "age": 33,
+    "department": "Administration",
+    "role": "Accountant",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "firstName": "Ricardo",
+    "lastName": "Torres",
+    "age": 40,
+    "department": "Research",
+    "role": "Senior Researcher",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "firstName": "Mariana",
+    "lastName": "López",
+    "age": 26,
+    "department": "Scientometrics",
+    "role": "Intern",
+    "status": "Active"
   }
 ]

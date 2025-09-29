@@ -16,19 +16,24 @@ public class WriteCsv {
      * @param outputFilePath Shows where the CSV file will be written.
      */
     public void writeCsvFile(List<Map<String, Object>> flattenedData, String outputFilePath){
-        try {
-            CsvMapper csvMapper = new CsvMapper();
-            CsvSchema.Builder schemaBuilder = CsvSchema.builder();
-            for (String key : flattenedData.get(0).keySet()) {
-                schemaBuilder.addColumn(key);
+
+        if (flattenedData.isEmpty()){
+            System.err.println("WARNING: List is empty");
+            return;
+        }
+            try {
+                CsvMapper csvMapper = new CsvMapper();
+                CsvSchema.Builder schemaBuilder = CsvSchema.builder();
+                for (String key : flattenedData.get(0).keySet()) {
+                    schemaBuilder.addColumn(key);
+                }
+                CsvSchema csvSchema = schemaBuilder.build().withHeader();
+
+                csvMapper.writer(csvSchema).writeValue(new File(outputFilePath), flattenedData);
+
+            } catch (IOException E) {
+                E.printStackTrace();
+                System.err.println("ERROR: Data could not be found or file could not be written.");
             }
-            CsvSchema csvSchema = schemaBuilder.build().withHeader();
-
-            csvMapper.writer(csvSchema).writeValue(new File(outputFilePath), flattenedData);
-
-        } catch (IOException E) {
-            E.printStackTrace();
-            System.err.println("ERROR: Data could not be found or file could not be written.");
         }
     }
-}

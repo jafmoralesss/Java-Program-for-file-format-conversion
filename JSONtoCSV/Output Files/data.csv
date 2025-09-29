@@ -1,4 +1,9 @@
-id,name,age,grade
-1,Ana,20,9
-2,Luis,22,7
-3,María,21,8
+id,firstName,lastName,age,department,role,status
+1,Beatriz,Solórzano,29,Scientometrics,"Software Developer",Active
+2,Érika,Martínez,42,Scientometrics,Director,Active
+3,Javier,Ramírez,35,IT,"Data Analyst",Active
+4,Lucía,Gómez,31,Research,Coordinator,Inactive
+5,Andrés,Hernández,27,IT,"Support Engineer",Active
+6,Paola,Santos,33,Administration,Accountant,Active
+7,Ricardo,Torres,40,Research,"Senior Researcher",Active
+8,Mariana,López,26,Scientometrics,Intern,Active
